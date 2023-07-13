@@ -11,7 +11,7 @@ def novoArquivo():
     janela.title(f"Editor de Texto")
 
 def abrirArquivo():
-    arquivo = askopenfilename(filetypes=[["Arquivos de texto", "*.txt"],["Todos os arquivos","."]])
+    arquivo = askopenfilename(filetypes=[["Arquivos de texto", "*.txt"],["Todos os arquivos","*.*"]])
     if not arquivo:
         return
     caixaDeTexto.delete(1,0, tk.END)
